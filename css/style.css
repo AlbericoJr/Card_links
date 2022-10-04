@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #010001 0%, #363536 40%, #727172 60%, #9F9C99 100%);
+    background-size: 200% 200%;
+    animation: float 6s linear infinite alternate;
+    
+}
+@keyframes float{
+    from{background-position: 0 0;}
+    to{background-position: 100% 100%;}
+}
+
+section{
+    padding: 45px;
+    background-color:#615961;
+    width: 500px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    box-shadow: 2px 15px 20px rgba(61, 61, 61, .4);
+}
+
+header img{
+    border: 1px solid #010001;
+    width: 140px;
+    border-radius: 200px;
+}
+
+header h3{
+    color: #6093cc;
+    font-size: 2rem;
+}
+
+p{
+    color: #fff;
+    font-size: 1rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+}
+
+main a{
+    background: #363536;
+    padding: 15px 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 3px;
+    box-shadow: 10px 10px #d4d2cf;
+    transition: all .5s ease-in-out;
+}
+
+main a:hover{
+    opacity: .85;
+}
+
+.footer{
+
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+@media (max-width: 520px){
+    section{
+        width: 90%;
+        padding: 30px;
+    }
+    header img{
+        width: 100px;
+    }
+    header h3{
+        font-size: 1.3rem;
+    }
+    main{
+        gap: 15px;
+    }
+    main a{
+        padding: 10px 0;
+        box-shadow: 5px 5px #d4d2cf;
+    }
+}
