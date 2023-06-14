@@ -1,34 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Favicon-->
-    <link rel="shortcut icon" href="img/perfil.png" type="image/x-icon">
-    <!--CSS-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
-    <title>Links - Primo Nerd</title>
+    <link rel="shortcut icon" href="./img/link.png" type="image/x-icon">
+    <title>MyLinks</title>
 </head>
 <body>
-    <section>
-        <header>
-            <img src="img/perfil.png" alt="Foto do Perfil">
-            <h3>Primo Nerd</h3>
-            <p>Developer Front-End</p>
-        </header>
+    <div id="container">
+        <div id="profile">
+            <img src="./img/perfil-darck.png" alt="Foto de Albérico Junior">
+            <p>
+                <a href="https://instagram.com/albericojr_?igshid=ZDdkNTZiNTM=" target="_blank">@albericojr_</a>
+            </p>
+        </div>
 
-        <main>
-            <a href="https://www.linkedin.com/in/alberico-junior/" target="_blank"> 💼 Linkedin</a>
-            <a href="https://github.com/AlbericoJr" target="_blank"> 😎 GitHub</a>
-            <a href="https://instagram.com/primo.nerd_?igshid=YmMyMTA2M2Y=" target="_blank"> 📸 Instagram: Primo.nerd_</a>
-            <a href="https://instagram.com/albericojr_?igshid=YmMyMTA2M2Y=" target="_blank"> 📸 Instagram: AlbericoJr_</a>
-            <a href="https://twitter.com/AlbericoJr_" target="_blank"> 🦅 Twitter</a>
-            <a href="https://medium.com/@albericoJr" target="_blank"> 📜 Medium</a>
-        </main>
-    </section>
+        <div id="switch" onclick="toggleMode()">
+            <button>
+                
+            </button>
+            <span></span>
+        </div>
 
-    <p class="footer">Copyright 2022 - Primo Nerd</p>
+        <div id="social-links">
+            <a href="https://github.com/AlbericoJr" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://instagram.com/primo.nerd_?igshid=YmMyMTA2M2Y=" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/alberico-junior/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://twitter.com/AlbericoJr_" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+        </div>
+
+        <ul>
+            <li>
+                <a href="https://portfolio-albericojr.vercel.app/" target="_blank">Portfólio</a>
+            </li>
+            <li>
+                <a href="https://medium.com/@albericoJr" target="_blank">Medium</a>
+            </li>
+            <li>
+                <a href="https://dev.to/albericojr" target="_blank">Dev.to</a>
+            </li>
+        </ul>
+
+        <footer>
+            Feito por Albérico Junior
+        </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="./script.js"></script>
 </body>
 </html>
