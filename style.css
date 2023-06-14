@@ -199,10 +199,10 @@ footer{
 /*Media queries*/
 @media screen and (min-width: 1680px){
     :root{
-        --bg-url: url(./img/bg-desktop.jpg);
+        --bg-url: #2B2D43;
     }
 
     .light{
-        --br-url:url(./img/bg-desktop-light.jpg);
+        --bg-url: rgb(233, 232, 245);
     }
 }
